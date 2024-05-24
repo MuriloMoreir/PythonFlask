@@ -14,7 +14,7 @@ class FlaskAppTests(unittest.TestCase):
  def test_murilo(self):
    response = self.client.get('/Murilo')
    self.assertEqual(response.status_code, 200)
-   self.assertIn(b'bbbbbbb',response.data)
+   self.assertIn(b'murilo',response.data)
    
 if __name__ == '__main__':
  unittest.main()
