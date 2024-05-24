@@ -25,10 +25,10 @@ jobs:
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-    - name: Relatorio e Teste
-      run: |
-        pip install coverage
-        coverage run -m app_test.py
-        coverage report -m
+    - name: Teste
+      run: coverage run -m app_test
+
+    - name: Relatorio
+      run: coverage report
 
 
