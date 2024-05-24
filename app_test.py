@@ -11,7 +11,7 @@ class FlaskAppTests(unittest.TestCase):
    self.assertEqual(response.status_code, 200)
    self.assertIn(b'Germinare',response.data)
 
-def test_murilo(self):
+ def test_murilo(self):
    response = self.client.get('/Murilo')
    self.assertEqual(response.status_code, 200)
    self.assertIn(b'bbbbbbb',response.data)
