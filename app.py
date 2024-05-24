@@ -6,7 +6,7 @@ def devops():
  return '<center><h1><font color=red>Germinare Tech, EU AMO DEVOPS</center>'
 
 @app.route('/Murilo')
-def devops():
+def murilo():
  return '<center><h1><font color=red>Germinare Tech, EU AMO DEVOPS ! EU AMO MURILO !</center>'
 
 if __name__ == '__main__':
