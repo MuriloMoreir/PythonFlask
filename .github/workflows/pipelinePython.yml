@@ -35,7 +35,7 @@ jobs:
     - uses: mr_smithers-excellent/docker-build-push@v6
     - name: Docker
       with:
-      run: |
+       run: |
         image: murilomoreira971/docker_pipeline
         tags: v1, latest
         registry: registry-url.io
