@@ -31,11 +31,9 @@ jobs:
     - name: Relatorio
       run: coverage report
     
-    
-    - uses: mr_smithers-excellent/docker-build-push@v6
     - name: Docker
+      uses: mr_smithers-excellent/docker-build-push@v6
       with:
-       run: |
         image: murilomoreira971/docker_pipeline
         tags: v1, latest
         registry: registry-url.io
